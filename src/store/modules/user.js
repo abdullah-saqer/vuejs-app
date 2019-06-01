@@ -23,7 +23,7 @@ const mutations = {
   LOGOUT(state) {
     state.user = {};
     state.authenticated = false;
-    localStorage.clear('userInfo');
+    localStorage.setItem('userInfo',"");
   }
 };
 
